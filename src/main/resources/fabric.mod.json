@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "gooncraft",
+	"version": "${version}",
+	"name": "GoonCraft",
+	"description": "The spiritual successor to Fapcraft, with more fleshed out features and fancier designs.",
+	"authors": [
+		"GoldShip / GoonShit / UMAPYOI",
+        "TheMostDeranged"
+	],
+	"contact": {
+		"homepage": "https://sprucesawdust.neocities.org/gooncraft/",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gooncraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nut.degenerette.gooncraft.GoonCraft"
+		],
+		"fabric-datagen": [
+			"nut.degenerette.gooncraft.GoonCraftDataGenerator"
+		],
+        "client": [
+            "nut.degenerette.gooncraft.GoonCraftClient"
+        ]
+	},
+	"mixins": [
+		"gooncraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
