@@ -10,7 +10,7 @@
 	],
 	"contact": {
 		"homepage": "https://sprucesawdust.neocities.org/gooncraft/",
-		"sources": ""
+		"sources": "https://github.com/GoonShit/fabric-gooncraft-1.21.X/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/gooncraft/icon.png",
