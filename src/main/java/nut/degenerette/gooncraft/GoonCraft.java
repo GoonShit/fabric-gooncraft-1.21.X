@@ -2,6 +2,9 @@ package nut.degenerette.gooncraft;
 
 import net.fabricmc.api.ModInitializer;
 
+import nut.degenerette.gooncraft.block.ModBlocks;
+import nut.degenerette.gooncraft.item.ModItemGroups;
+import nut.degenerette.gooncraft.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //why does kaupenjoe not tell me how to make entities able to have sex with the player
@@ -12,6 +15,8 @@ public class GoonCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+        ModItemGroups.registerItemGroups();
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
